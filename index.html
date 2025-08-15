@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="head">Disccussion Portal</div>
+   <div id="main">
+    <div class="parents" id="output">
+        <div id="btns">
+            <button class="btns" style="margin-right: 100px; width: 150px; " id="new">
+                New Question Form
+            </button>
+            <button class="btns" style="width: 150px;">
+                Search Questions
+            </button>
+        </div>
+       <div id="out">
+        <div class="childs" style="height: 50px; background-color: white; margin-top: 10px; padding-top: 5px;">
+            <h5 style="margin-left: 260px;">${sub.value}</h5>
+            <p style="margin-top:10px ;">${question.value}</p>
+        </div>
+       </div>
+    </div>
+        <div class="parents" id="input">
+            <h1>Welcome to Discussion Portal!</h1>
+            <p>enter a subject and questions to get started</p>
+            <div id="inputs">
+                <input type="text" name="subject" id="subject" placeholder="Enter Subject...">
+                <textarea name="question" id="question" placeholder="Enter Questions..."></textarea>
+            </div>
+            <button id="sub">Submit</button>
+        </div>
+  
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
